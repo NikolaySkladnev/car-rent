@@ -469,9 +469,9 @@ Content-Type: application/json
 - `isAvailable(carId, dateFrom, dateTo) -> boolean`
 
 ### 3.3 ReservationsService
-- `createReservation(clientId, carId, dateFrom, dateTo) -> BookingDto`
-- `listMyReservations(clientId) -> List<BookingDto>`
-- `cancelReservation(clientId, bookingId) -> BookingDto`
+- `createReservation(clientId, carId, dateFrom, dateTo) -> ReservationDto`
+- `listMyReservations(clientId) -> List<ReservationDto>`
+- `cancelReservation(clientId, reservationId) -> ReservationDto`
 
 ### 3.4 Repositories
 - `ClientRepository`: `findByLogin`, `findById`, `save`
